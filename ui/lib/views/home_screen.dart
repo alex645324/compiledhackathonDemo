@@ -10,7 +10,7 @@ const _gray2 = Color(0xFFAEAEB2);
 const _gray3 = Color(0xFFE8E8ED);
 const _bg = Color(0xFFF5F5F7);
 
-const _openAiApiKey = 'String.fromEnvironment(OPENAI_API_KEY)';
+const _openAiApiKey = '';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
