@@ -2,12 +2,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:ui/main.dart';
 
 void main() {
-  testWidgets('Home screen renders input fields and button', (WidgetTester tester) async {
+  testWidgets('Home screen renders title, upload area, and run button',
+      (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
 
-    expect(find.text('Claim Stress Test'), findsOneWidget);
+    expect(find.text('Before You Invest\nLet\'s See If It Holds Up'), findsOneWidget);
+    expect(find.text('Upload CSV / XLSX'), findsOneWidget);
     expect(find.text('Run Stress Test'), findsOneWidget);
-    expect(find.text('Control values'), findsOneWidget);
-    expect(find.text('Treatment values'), findsOneWidget);
   });
 }
